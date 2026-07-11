@@ -60,11 +60,14 @@ class StudentManagement:
     def update_student(self):
 
         while True:
-         choice = input('what do you want to change')
+         
          print('1. Roll Number')
          print('2. Name')
          print('3. Age')
          print('4. Marks')
+
+         choice = int(input('what do you want to change: '))
+
 
          if choice == 1:
             roll_no = int(input('Enter previous roll number: '))
@@ -72,19 +75,24 @@ class StudentManagement:
             if roll_no in self.all_students:
                 new_roll_number = int(input('Enter new roll number: '))
                 self.all_students[roll_no] = new_roll_number
+                
             else:
                 print('entered roll number not found to change..')
-
-         if choice == 2:
-            name = int(input('Enter previous name of student: '))
+            print('Roll Number changed successfully..')
+            break
+         
+         elif choice == 2:
+            name = input('Enter previous name of student: ')
 
             if name in self.all_students:
                 new_name = input('Enter new name of student: ')
                 self.all_students[name] = new_name
             else:
                 print('entered name not found to change..')
+            print('Name changed successfully..')
+            break
 
-         if choice == 3:
+         elif choice == 3:
             age = int(input('Enter previous age of student: '))
 
             if age in self.all_students:
@@ -92,12 +100,18 @@ class StudentManagement:
                 self.all_students[age] = new_age
             else:
                 print('entered age not found to change..')
+            print('Age changed successfully..')
+            break
         
-         if choice == 4:
+         elif choice == 4:
             marks = int(input('Enter previous marks of student: '))
 
             if marks in self.all_students:
                 new_marks = input('Enter new marks of student: ')
-                self.all_students[age] = new_marks
+                self.all_students[marks] = new_marks
             else:
                 print('entered marks not found to change..')
+            print('Marks changed successfully..')
+            break
+         else:
+             break
