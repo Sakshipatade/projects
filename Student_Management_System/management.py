@@ -52,7 +52,52 @@ class StudentManagement:
     def search_student(self):
         roll_no = int(input('enter the roll number you want to search: '))
         if roll_no in self.all_students:
-            for i in self.all_students.values():
-                i.display()
+            for student in self.all_students.values():
+                student.display()
         else:
             print('roll number not found..')
+
+    def update_student(self):
+
+        while True:
+         choice = input('what do you want to change')
+         print('1. Roll Number')
+         print('2. Name')
+         print('3. Age')
+         print('4. Marks')
+
+         if choice == 1:
+            roll_no = int(input('Enter previous roll number: '))
+
+            if roll_no in self.all_students:
+                new_roll_number = int(input('Enter new roll number: '))
+                self.all_students[roll_no] = new_roll_number
+            else:
+                print('entered roll number not found to change..')
+
+         if choice == 2:
+            name = int(input('Enter previous name of student: '))
+
+            if name in self.all_students:
+                new_name = input('Enter new name of student: ')
+                self.all_students[name] = new_name
+            else:
+                print('entered name not found to change..')
+
+         if choice == 3:
+            age = int(input('Enter previous age of student: '))
+
+            if age in self.all_students:
+                new_age = input('Enter new age of student: ')
+                self.all_students[age] = new_age
+            else:
+                print('entered age not found to change..')
+        
+         if choice == 4:
+            marks = int(input('Enter previous marks of student: '))
+
+            if marks in self.all_students:
+                new_marks = input('Enter new marks of student: ')
+                self.all_students[age] = new_marks
+            else:
+                print('entered marks not found to change..')
