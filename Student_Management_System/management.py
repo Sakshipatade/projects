@@ -49,4 +49,5 @@ class StudentManagement:
 
         print(f'Total students are {Student.total_students}')
 
-    # def search_student(self):
+    def search_student(self):
+        pass
