@@ -50,4 +50,9 @@ class StudentManagement:
         print(f'Total students are {Student.total_students}')
 
     def search_student(self):
-        pass
+        roll_no = int(input('enter the roll number you want to search: '))
+        if roll_no in self.all_students:
+            for i in self.all_students.values():
+                i.display()
+        else:
+            print('roll number not found..')
