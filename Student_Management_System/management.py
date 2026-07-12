@@ -59,6 +59,7 @@ class StudentManagement:
 
     def update_student(self):
 
+        roll_no = int(input('Enter the roll number of the student you want to update about his data: '))
         while True:
          
          print('1. Roll Number')
