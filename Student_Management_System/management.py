@@ -75,51 +75,50 @@ class StudentManagement:
             roll_no = int(input('Enter previous roll number: '))
 
             if roll_no in self.all_students:
-                print('found')
+                new_roll_number = int(input('Enter new roll number: '))
+                self.all_students[roll_no] = new_roll_number
+                print('Roll Number changed successfully..')
             else:
-                print('not found')
-#                 new_roll_number = int(input('Enter new roll number: '))
-#                 self.all_students[roll_no] = new_roll_number
-                
-#             else:
-#                 print('entered roll number not found to change..')
-#             print('Roll Number changed successfully..')
-#             break
+                print('entered roll number not found to change..')
+            
+            
          
-#          elif choice == 2:
-#             name = input('Enter previous name of student: ')
+         elif choice == 2:
+            name = input('Enter previous name of student: ')
 
-#             if name in self.all_students:
-#                 new_name = input('Enter new name of student: ')
-#                 self.all_students[name] = new_name
-#             else:
-#                 print('entered name not found to change..')
-#             print('Name changed successfully..')
-#             break
+            if name in self.all_students:
+                new_name = input('Enter new name of student: ')
+                self.all_students[name] = new_name
+                print('Name changed successfully..')
+            else:
+                print('entered name not found to change..')
+            
+            
 
-#          elif choice == 3:
-#             age = int(input('Enter previous age of student: '))
+         elif choice == 3:
+            age = int(input('Enter previous age of student: '))
 
-#             if age in self.all_students:
-#                 new_age = input('Enter new age of student: ')
-#                 self.all_students[age] = new_age
-#             else:
-#                 print('entered age not found to change..')
-#             print('Age changed successfully..')
-#             break
+            if age in self.all_students:
+                new_age = input('Enter new age of student: ')
+                self.all_students[age] = new_age
+                print('Age changed successfully..')
+            else:
+                print('entered age not found to change..')
+            
+            
         
-#          elif choice == 4:
-#             marks = int(input('Enter previous marks of student: '))
+         elif choice == 4:
+            marks = int(input('Enter previous marks of student: '))
 
-#             if marks in self.all_students:
-#                 new_marks = input('Enter new marks of student: ')
-#                 self.all_students[marks] = new_marks
-#             else:
-#                 print('entered marks not found to change..')
-#             print('Marks changed successfully..')
-#             break
-#          else:
-#              break
+            if marks in self.all_students:
+                new_marks = input('Enter new marks of student: ')
+                self.all_students[marks] = new_marks
+                print('Marks changed successfully..')
+            else:
+                print('entered marks not found to change..')
+            
+         else:
+             break
          
 
 
