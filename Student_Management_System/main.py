@@ -1,6 +1,7 @@
 from management import StudentManagement
 
 sms = StudentManagement()
+sms.load_students()
 
 while True:
     print('-----------Student Management System---------------')

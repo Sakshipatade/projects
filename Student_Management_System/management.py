@@ -7,7 +7,7 @@ class StudentManagement:
         self.all_students = {}
         
 
-    
+    # CRUD Operations
     def add_student(self):
         while True:
             try:
@@ -170,3 +170,17 @@ class StudentManagement:
                     print('roll number does not exist..')
             except ValueError:
                 print("roll number must be a number..")
+
+
+
+    # File Handling Operations
+    def load_students(self):
+        try:
+            with open('students.txt', 'r') as file:
+                for line in file:
+                    data = line.strip().split(",")
+                    roll_no = int(data[0])
+                    student = Student(roll_no, data[1], int(data[2]), int(data[3]))
+                    self.all_students[roll_no] = student
+        except FileNotFoundError:
+            print('File not found')         
