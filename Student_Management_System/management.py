@@ -157,3 +157,16 @@ class StudentManagement:
             print('Roll Number must be a number..')    
            
 
+    def delete_student(self):
+        while True:
+            try:
+                roll_no = int(input('Enter the student roll number to delete the student: '))
+                if roll_no in self.all_students:
+                    self.all_students.pop(roll_no)
+                    print('Student deleted successfully..')
+                    Student.total_students -=1
+                    break
+                else:
+                    print('roll number does not exist..')
+            except ValueError:
+                print("roll number must be a number..")

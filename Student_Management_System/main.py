@@ -8,9 +8,8 @@ while True:
     print('2. View Student')
     print('3. Search Student')
     print('4. Update Student')
-    
-    # print('5. Delete Student')
-    print('5. Exit')
+    print('5. Delete Student')
+    print('6. Exit')
     print("-" * 30)
 
 
@@ -25,6 +24,8 @@ while True:
     elif choice == 4:
         sms.update_student()
     elif choice == 5:
+        sms.delete_student()
+    elif choice == 6:
         break
     else:
         print('Invalid Choice Entered..')
