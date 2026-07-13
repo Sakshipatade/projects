@@ -184,3 +184,10 @@ class StudentManagement:
                     self.all_students[roll_no] = student
         except FileNotFoundError:
             print('File not found')         
+
+    def save_students(self):
+        with open('students.txt', 'w') as file:
+            for student in self.all_students.values():
+                format = f'{student.roll_no},{student.name},{student.age},{student.marks}\n'
+                file.write(format)
+            
