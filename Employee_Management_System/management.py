@@ -144,3 +144,17 @@ class EmpManagement:
                 print('Id does not exists..')
         except ValueError:
             print('Employee id must be a number..')
+    
+    def delete_emp(self):
+        while True:
+            try:
+                emp_id = int(input('Enter the employee id to delete him/her: '))
+                if not emp_id in self.total_emp:
+                    print("Employee not found to delete..")
+                else:
+                    self.total_emp.pop(emp_id)
+                    Employee.total_employees -=1
+                    print('Employee deleted successfully..')
+                    break
+            except ValueError:
+                print("ID must be a number..")

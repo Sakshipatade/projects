@@ -8,8 +8,8 @@ while True:
     print('2. Search Employee')
     print('3. View Employee')
     print('4. Update Employee')
-    # print('5. Delete Employee')
-    print('5. Exit')
+    print('5. Delete Employee')
+    print('6. Exit')
     print('-' * 20)
 
 
@@ -24,6 +24,8 @@ while True:
     elif choice == 4:
         ems.update_emp()
     elif choice == 5:
+        ems.delete_emp()
+    elif choice == 6:
         break
     else:
         print('Invalid Choice..') 
