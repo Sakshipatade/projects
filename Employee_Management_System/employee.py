@@ -1,11 +1,12 @@
 class Employee:
-    employees = 0
+    total_employees = 0
 
     def __init__(self, emp_id, name, address, salary):
         self.emp_id = emp_id
         self.name = name
         self.address = address
         self.salary = salary
+        Employee.total_employees +=1
 
     def display(self):
         print("-" * 20)
