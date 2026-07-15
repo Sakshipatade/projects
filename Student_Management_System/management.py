@@ -82,11 +82,11 @@ class StudentManagement:
 
                 while True:
                     print('.'* 20)
-                    print('1. Roll Number')
-                    print('2. Name')
-                    print('3. Age')
-                    print('4. Marks')
-                    print('5. Exit')
+                    print('1. Change Roll Number')
+                    print('2. Change Name')
+                    print('3. Change Age')
+                    print('4. Change Marks')
+                    print('5. Change Exit')
                     print('.'* 20)
 
                     try:
@@ -163,8 +163,8 @@ class StudentManagement:
                 roll_no = int(input('Enter the student roll number to delete the student: '))
                 if roll_no in self.all_students:
                     self.all_students.pop(roll_no)
-                    print('Student deleted successfully..')
                     Student.total_students -=1
+                    print('Student deleted successfully..')
                     break
                 else:
                     print('roll number does not exist..')
