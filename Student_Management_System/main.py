@@ -14,7 +14,6 @@ while True:
     print('7. Exit')
     print("-" * 30)
 
-
     choice = int(input('enter your choice: '))
 
     if choice == 1:
