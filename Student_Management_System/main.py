@@ -32,4 +32,4 @@ while True:
     elif choice == 7:
         break
     else:
-        print('Invalid Choice Entered Enter from above..')
+        print('Invalid Choice Entered..')
