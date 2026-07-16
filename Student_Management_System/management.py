@@ -92,7 +92,6 @@ class StudentManagement:
                     try:
                         choice = int(input('what do you want to change: '))
 
-
                         if choice == 1:
                             while True:
                                 try:
