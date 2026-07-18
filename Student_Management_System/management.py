@@ -188,5 +188,5 @@ class StudentManagement:
         with open('students.txt', 'w') as file:
             for student in self.all_students.values():
                 format = f'{student.roll_no},{student.name},{student.age},{student.marks}\n'
-                file.write(format)
+                file.write(forma)
             
