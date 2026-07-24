@@ -1,5 +1,0 @@
-101,Sakshi,21,92
-102,Vaishnavi,19,90
-103,Akshay,22,90
-104,Harry,21,89
-105,Suzzaine,20,91
