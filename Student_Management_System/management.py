@@ -1,7 +1,5 @@
 from student import Student
 import re
-import mysql.connector
-
 class StudentManagement:
 
     def __init__(self):
