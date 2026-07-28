@@ -1,5 +1,6 @@
 from student import Student
 import re
+import mysql.connector
 
 class StudentManagement:
 
@@ -86,7 +87,7 @@ class StudentManagement:
                     print('2. Change Name')
                     print('3. Change Age')
                     print('4. Change Marks')
-                    print('5. Change Exit')
+                    print('5. Exit')
                     print('.'* 20)
 
                     try:
