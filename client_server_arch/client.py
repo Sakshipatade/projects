@@ -1,21 +1,21 @@
-import socket
+# import socket
 
-client_socket = socket.socket()
-client_socket.connect(('localhost', 3000))
+# client_socket = socket.socket()
+# client_socket.connect(('localhost', 3000))
 
-while True:
-    my_msg = input('Ask: ')
-    client_socket.send(my_msg.encode())
+# while True:
+#     my_msg = input('Ask: ')
+#     client_socket.send(my_msg.encode())
 
-    # response = client_socket.recv(1024).decode()
-    # print('Server: ', response)
+#     # response = client_socket.recv(1024).decode()
+#     # print('Server: ', response)
     
-    if my_msg.lower() == 'exit':
-        print('closing client connection.')
-        break
+#     if my_msg.lower() == 'exit':
+#         print('closing client connection.')
+#         break
 
 
-client_socket.close()
+# client_socket.close()
 
 
 # We can write it using the context managers so we don't need to close the connection manually
